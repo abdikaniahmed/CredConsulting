@@ -1,0 +1,33 @@
+.App {
+  font-family: sans-serif;
+  margin: auto;
+}
+.nav {
+  padding: 7px;
+  box-shadow: 0 0 2px solid #db2828;
+}
+.page {
+  margin: 20px 0px;
+}
+.left-side {
+  text-align: center;
+  margin: auto;
+}
+.left-side h2 {
+  text-align: center;
+  color: #db2828;
+}
+.row {
+  margin-top: 20px;
+}
+.R2 {
+  text-align: center;
+  background-color: rgb(214, 226, 226);
+  padding: 10px;
+}
+.R2 h2 {
+  font-weight: bolder;
+}
+.RC {
+  border-right: 5px solid rgb(0, 2, 2);
+}
