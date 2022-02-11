@@ -1,14 +1,14 @@
 import "./styles.css";
-import Header from "./Components/header";
-// import Home from "./Components/home";
-// import Footer from "./Components/footer";
+// import Header from "./Components/header";
+import NavApp from "./Components/navApp";
+import Home from "./Components/home";
 
 export default function App() {
   return (
     <div className="App">
-      <Header />
-      {/* <Home />
-      <Footer /> */}
+      {/* <Header /> */}
+      <NavApp />
+      <Home />
     </div>
   );
 }

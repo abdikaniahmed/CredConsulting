@@ -1,3 +1,4 @@
+import { Component } from "react";
 import {
   Nav,
   NavItem,
@@ -7,23 +8,33 @@ import {
   Collapse,
   NavbarToggler
 } from "reactstrap";
-export default function Header() {
-  return (
-    <Navbar color="dark" dark expand="md">
-      <NavbarBrand className="me-auto" href="/">
-        CredConsulting
-      </NavbarBrand>
-      <NavbarToggler className="me-2" onClick={function noRefCheck() {}} />
-      <Collapse navbar className="me-2">
-        <Nav navbar>
-          <NavItem>
-            <NavLink href="#">About</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#">Contact Us</NavLink>
-          </NavItem>
-        </Nav>
-      </Collapse>
-    </Navbar>
-  );
+class Header extends Component {
+  state = {
+    isOpen: false
+  };
+  toggle = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  };
+  render() {
+    return (
+      <Navbar color="dark" dark expand="md">
+        <NavbarBrand href="/">CredConsulting</NavbarBrand>
+        <NavbarToggler onClick={this.toggle} />
+        <Collapse navbar isOpen={this.state.isOpen}>
+          <Nav navbar className="me-2">
+            <NavItem>
+              <NavLink href="#">About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#">Contact Us</NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    );
+  }
 }
+
+export default Header;
