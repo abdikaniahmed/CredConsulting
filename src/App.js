@@ -1,16 +1,10 @@
 import "./styles.css";
-// import Header from "./Components/header";
-import NavApp from "./Components/navApp";
-// import Home from "./Components/home";
-import About from "./Components/about";
+import Main from "./Components/main";
 
 export default function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
-      <NavApp />
-      {/* <Home /> */}
-      <About />
+      <Main />
     </div>
   );
 }
