@@ -1,16 +1,7 @@
-import {
-  Row,
-  Col,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  Spinner,
-  Button
-} from "reactstrap";
+import { Row, Col, Form, FormGroup, Label, Input, Button } from "reactstrap";
 export default function Contact() {
   return (
-    <div className="container-fluid">
+    <div className="container">
       <h1 className="text-center my-4">Contact Us</h1>
       <Row className="m-2">
         <Col md="6">

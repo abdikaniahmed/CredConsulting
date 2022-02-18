@@ -1,8 +1,8 @@
 import { Col, Row } from "reactstrap";
-import Img from "../images/credConsulting.jpg";
 export default function Home() {
   return (
-    <div className="container-fluid page">
+    <div className="container">
+      <h1 className="m-4 text-center"> Welcome to Cred Consulting</h1>
       <Row className="row">
         <Col md="6">
           <p>
@@ -15,7 +15,7 @@ export default function Home() {
             partners thus ensuring that they have a proper grasp of the local
             environment that they operate in.
           </p>
-          <img src={Img} alt="cred" width="100%" />
+          <img src="./images/credConsulting.jpg" alt="cred" width="100%" />
         </Col>
         <Col md="6" className="left-side">
           <h2>Vision</h2>
