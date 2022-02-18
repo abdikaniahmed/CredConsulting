@@ -3,7 +3,8 @@ import NavApp from "./navApp";
 // import Home from "./home";
 // import About from "./about";
 // import Contact from "./Contact";
-import Service from "./service";
+import Insights from "./insights";
+// import Service from "./service";
 
 export default function Main() {
   return (
@@ -13,7 +14,8 @@ export default function Main() {
       {/* <Home /> */}
       {/* <About /> */}
       {/* <Contact /> */}
-      <Service />
+      {/* <Service /> */}
+      <Insights />
     </>
   );
 }
