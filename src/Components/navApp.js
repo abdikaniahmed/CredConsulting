@@ -14,12 +14,13 @@ export default function NavApp() {
     setIsOpen(!isOpen);
   }
   return (
-    <Navbar color="dark" dark expand="md">
-      {/* <NavbarBrand href="/">CredConsulting</NavbarBrand> */}
+    <Navbar color="dark" dark expand="md" className="container-fluid fixed-top">
+      {/* <div className="container-fluid"> */}
       <NavbarToggler onClick={toggle} />
       <Collapse navbar isOpen={isOpen}>
         <Nav navbar>
           <NavItem>
+            <NavLink to="/" />
             <NavLink className="nav-link" to="/About">
               About
             </NavLink>
@@ -41,6 +42,10 @@ export default function NavApp() {
           </NavItem>
         </Nav>
       </Collapse>
+      <NavbarBrand href="/" className="me-5">
+        CredConsulting
+      </NavbarBrand>
+      {/* </div> */}
     </Navbar>
   );
 }
